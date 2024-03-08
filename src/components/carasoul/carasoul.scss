@@ -1,0 +1,90 @@
+@import "../../App.scss";
+
+.mainconc{
+    max-width: 900px;
+    width: 95%;
+    box-shadow: 3px 3px 25px white;
+    background-color: transparent;
+    
+    object-fit: cover;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+
+    @include mobile{
+        max-width: 400px;
+        height: 630px;
+    }
+
+    
+    
+   
+
+    .second{
+        margin-top: 1px;
+        overflow: visible;
+        border-radius: 20px;
+        
+        
+
+        .backgr{
+            background-color: grey;
+            opacity: 0.85;
+            border-radius: 16px;
+            
+            
+           
+            
+            
+           .image{
+            display: flex;
+            height: 200px;
+            
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            
+            background-color:orange;
+            opacity: 1;
+            
+            
+           }
+
+           .textcon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+            padding: 10px;
+            color: black;
+
+            @include mobile{
+                font-size: 25px;
+               
+            }
+
+            .name{
+                font-weight: bold;
+                font-size: 25px;
+                color: rgb(12, 240, 248);
+                @include mobile{
+               font: 10px;
+                }
+    
+            }
+            button{
+                background-color: orange;
+                width: 120px;
+                height: 35px;
+                border: none;
+                cursor: pointer;
+                border-radius: 30px;
+                font-size: 15px;
+                font-weight: 500;
+                color: white;
+            }
+           }
+        }
+    }
+}
